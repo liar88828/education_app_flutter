@@ -3,7 +3,8 @@ import 'package:education_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+  final Widget child;
+  const MainScreen({super.key, required this.child});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -19,12 +20,12 @@ class _MainScreenState extends State<MainScreen> {
     Icons.person,
   ];
 
-  final List<Widget> _screens = [
-    Container(),
-    Container(),
-    Container(),
-    Container(),
-  ];
+  // final List<Widget> _screens = [
+  //   HomeScreen(),
+  //   Container(),
+  //   Container(),
+  //   Container(),
+  // ];
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,7 @@ class _MainScreenState extends State<MainScreen> {
         foregroundColor: Colors.white,
         child: Icon(Icons.add),
       ),
-      body: _screens[_currentIndex],
+      body: widget.child,
     );
   }
 }
