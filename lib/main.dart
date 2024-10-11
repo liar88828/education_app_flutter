@@ -1,3 +1,4 @@
+import 'package:education_app/screens/course_detail_screen.dart';
 import 'package:education_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: CourseDetailScreen(),
     );
   }
 }
