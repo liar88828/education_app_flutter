@@ -1,5 +1,6 @@
 import 'package:education_app/screens/course_detail_screen.dart';
 import 'package:education_app/screens/home_screen.dart';
+import 'package:education_app/screens/video_selection_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CourseDetailScreen(),
+      home: VideoSelectionScreen(),
     );
   }
 }
